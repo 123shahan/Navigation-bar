@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --text-white: #fff
+}
+
+#footer {
+    background-color: #ae9788;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#footer h2 {
+    font-size: 3rem;
+    color: var(--text-white);
+}
+
+.footer-description {
+    color: var(--text-white);
+    width: 60%;
+    display: block;
+    margin: 25px auto;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.social ul li {
+    margin: 14px;
+    border: 2px solid var(--text-white);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.social ul li i {
+    font-size: 1.4rem;
+    color: var(--text-white);
+}
+
+.footer-bottom {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 11px 19px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: rgb(7, 7, 169);
+    line-height: 38px;
+}
+
+.right a {
+    text-decoration: none;
+    color: var(--text-white);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+    .footer-bottom {
+        justify-content: center;
+    }
+
+    .footer-description {
+        width: 90%;
+    }
+}
